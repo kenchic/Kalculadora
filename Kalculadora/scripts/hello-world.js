@@ -19,13 +19,13 @@ function sayHello() {
     var sayHelloTextElem = document.getElementById('helloWorldText');
     var inputText = document.getElementById('txtName');
 
-    sayHelloTextElem.innerHTML = 'Hello, ' + inputText.value + '!';
+    sayHelloTextElem.innerHTML = 'Hola, ' + inputText.value + '!';
     sayHelloTextElem.style.display = 'block';
-    sayHelloInputElem.style.display = 'none';
+    sayHelloInputElem.style.display = 'none';    
 }
 
 function sayHelloReset() {
-    var sayHelloInputElem = document.getElementById('helloWorldInput');
+    var sayHelloInputElem = document.getElementById('helloWorldInput');    
     var sayHelloTextElem = document.getElementById('helloWorldText');
     var inputText = document.getElementById('txtName');
 

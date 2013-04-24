@@ -7,31 +7,33 @@
         <script src="kendo/js/jquery.min.js"></script>
         <script src="kendo/js/kendo.mobile.min.js"></script>
         <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
-        <script src="scripts/hello-world.js"></script>
+        <script src="scripts/Finanzas.js"></script>
 
         <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
         <link href="styles/main.css" rel="stylesheet" />
     </head>
     <body>
         <div data-role="view" id="tabstrip-home" data-title="Hello World!">
-            <h1>Welcome!</h1>
+            <h1>@Kenchic</h1>
             <p>
-                Icenium&trade; enables you to build cross-platform device applications regardless of your 
-                development platform by combining the convenience of a local development toolset with the 
-                power and flexibility of the cloud.
+                Calculadora Intereses.
             </p>
         </div>
 
         <div data-role="view" id="tabstrip-uiinteraction" data-title="UI Interaction">
-            <h1>Say Hello!</h1>
-            <div id='helloWorldInput'>
-                <label for="txtName" style="display: inline-block;">Enter your name:</label>
-                <input type="text" id="txtName" value="" />
+            <h1>Información</h1>
+            <div id='formIngreso'>
+                <label for="txtMonto" style="display: inline-block;">Monto:</label>                                
+                <input type="text" id="txtMonto" value="" /><br/>
+                <label for="txtIntereses" style="display: inline-block;">Interes:</label>
+                <input type="text" id="txtIntereses" value="" /><br/>
+                <label for="txtNoCuotas" style="display: inline-block;">No Cuotas:</label>
+                <input type="text" id="txtNoCuotas" value="" />
             </div>
-            <div id='helloWorldText' style="display:block;"></div>
+            <div id='formResultado' style="display:block;"></div>
             <div class="buttonArea">
-                <a id="resetButton" data-role="button" data-click="sayHelloReset" data-icon="refresh">Reset</a>
-                <a id="submitButton" data-role="button" data-click="sayHello" data-icon="compose">Submit</a>
+                <a id="resetButton" data-role="button" data-click="Limpiar" data-icon="refresh">Limpiar</a>
+                <a id="submitButton" data-role="button" data-click="CalcularCuotas" data-icon="compose">Enter</a>
             </div>
         </div>
 
