@@ -5,12 +5,10 @@
         <meta charset="utf-8" />
         <script src="cordova.js"></script>
         <script src="kendo/js/jquery.min.js"></script>
-        <script src="kendo/js/kendo.mobile.min.js"></script>
-        <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+        <script src="kendo/js/kendo.mobile.min.js"></script>        
         <script src="scripts/Finanzas.js"></script>
-
         <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
-        <link href="styles/main.css" rel="stylesheet" />
+        <link href="styles/tablas.css" rel="stylesheet" />
     </head>
     <body>
         <div data-role="view" id="tabstrip-home" data-title="Hello World!">
@@ -23,12 +21,23 @@
         <div data-role="view" id="tabstrip-uiinteraction" data-title="UI Interaction">
             <h1>Información</h1>
             <div id='formIngreso'>
-                <label for="txtMonto" style="display: inline-block;">Monto:</label>                                
-                <input type="text" id="txtMonto" value="" /><br/>
-                <label for="txtIntereses" style="display: inline-block;">Interes:</label>
-                <input type="text" id="txtIntereses" value="" /><br/>
-                <label for="txtNoCuotas" style="display: inline-block;">No Cuotas:</label>
-                <input type="text" id="txtNoCuotas" value="" />
+                <ul data-role="listview" data-style="inset">
+                    <li>
+                        <label for="txtMonto" style="display: inline-block;">Monto:                                
+                            <input type="text" id="txtMonto" value="" />                            
+                        </label>
+                    </li>
+                    <li>
+                        <label for="txtIntereses" style="display: inline-block;">Interes:
+                            <input type="text" id="txtIntereses" value="" />                            
+                        </label>
+                    </li>
+                    <li>
+                        <label for="txtNoCuotas" style="display: inline-block;">No Cuotas:
+                            <input type="number" id="txtNoCuotas" value="" />                            
+                        </label>
+                    </li>
+                </ul>
             </div>
             <div id='formResultado' style="display:block;"></div>
             <div class="buttonArea">
@@ -55,9 +64,8 @@
 
             <div data-role="footer">
                 <div data-role="tabstrip">
-                    <a href="#tabstrip-home" data-icon="home">Home</a>
-                    <a href="#tabstrip-uiinteraction" data-icon="share">UI Interaction</a>
-                    <a href="#tabstrip-geolocation" data-icon="globe">Geolocation</a>
+                    <a href="#tabstrip-home" data-icon="home">Creditos</a>
+                    <a href="#tabstrip-uiinteraction" data-icon="share">Calculadora</a>                    
                 </div>
             </div>
         </div>

@@ -11,7 +11,7 @@
     <DeviceOrientations>Portrait;Landscape</DeviceOrientations>
     <iOSStatusBarStyle>Default</iOSStatusBarStyle>
     <AndroidHardwareAcceleration>false</AndroidHardwareAcceleration>
-    <BundleVersion>1.0</BundleVersion>
+    <BundleVersion>1.1</BundleVersion>
     <iOSDisplayName />
     <iOSDeviceFamily>1;2</iOSDeviceFamily>
     <AndroidVersionCode>1</AndroidVersionCode>
@@ -38,6 +38,7 @@
     </Folder>
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="App_Resources\Android\drawable-nodpi\splashscreen.9.png" />
     <Resource Include="App_Resources\iOS\icon.png" />
     <Resource Include="App_Resources\iOS\icon@2x.png" />
     <Resource Include="App_Resources\iOS\icon-72.png" />
@@ -58,7 +59,6 @@
     <Resource Include="App_Resources\Android\drawable-hdpi\icon.png" />
     <Resource Include="App_Resources\Android\drawable-mdpi\icon.png" />
     <Resource Include="App_Resources\Android\drawable-ldpi\icon.png" />
-    <Resource Include="App_Resources\Android\drawable-nodpi\splashscreen.9.png" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="index.html" />
@@ -79,6 +79,7 @@
       <Platform>Android</Platform>
       <TargetName>cordova.js</TargetName>
     </Content>
+    <Content Include="styles\tablas.css" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Telerik\ICE\Tools\Mobile\MobileTools.targets" />
 </Project>
